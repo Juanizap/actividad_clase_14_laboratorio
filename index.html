@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad laboratorio (clase 14) </title>
+    <style>
+
+        header{
+            width: 100%;
+            height: 300px;
+            background-color: blueviolet;
+
+        }
+        main{
+            width: 50%;
+            height: 300px;
+            background-color: cadetblue;
+            float: left;
+            
+        }
+
+        aside{
+            width: 50%;
+            height: 300px;
+            background-color: blue;
+            float: right;
+            
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <header></header>
+    <main></main>
+    <aside></aside>
+
+   <button id="cambiar">Cambiar</button>
+   <button id="volver">volver</button>
+
+   <script>
+
+    const cambiarBoton = document.getElementById("cambiar");
+    const volverBoton = document.getElementById("volver");
+
+    let main = document.querySelector("main");
+    let aside = document.querySelector("aside");
+
+    cambiarBoton.addEventListener("click", function(){
+      
+        main.style.width = "100%"
+        aside.style.width = "100%"
+
+    })
+
+    volverBoton.addEventListener("click", function(){
+  
+        main.style.width = "50%"
+        aside.style.width = "50%"
+      
+
+
+    })
+
+   </script>
+    
+</body>
+</html>
